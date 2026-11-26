@@ -9,7 +9,13 @@ class Chat extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['wa_id', 'sender', 'message', 'direction'];
+    protected $fillable = [
+        'wa_id',
+        'sender',
+        'message',
+        'direction',
+        'handled_by'
+    ];
 
     public function petugas()
     {
